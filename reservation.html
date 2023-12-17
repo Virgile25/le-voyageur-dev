@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/55ce93407b.js" crossorigin="anonymous"></script>
+    <title>Le Voyageur | Accueil</title>
+</head>
+<body>
+    <div class="pb-3">
+        <header class="navbar navbar-expand-md navbar-light  mx-3 pb-3 mt-3">
+            <div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" style="width: 10rem;">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse sticky-top" id="navbar-content">
+                <ul class="navbar-nav fw-bold ms-auto" id="navbarItems">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#account"><i class="fa-solid fa-user" style="color: #000000;"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div>
+        <div class="container min-vh-100 d-flex justify-content-center align-items-center teste">
+            <div class="card bg" style="width: 100%;">
+                
+                <div class="d-flex justify-content-center mt-3">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="train" name="radionExam">
+                        <label for="train">Train</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="bus" name="radionExam" checked>
+                        <label for="bus">Bus</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="bateau" name="radionExam">
+                        <label for="bateau">Bateau</label>
+                    </div>
+                </div>
+
+                 <!-- Contenu de l'Élément bus -->
+            <div id="elementBus">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="m-5">
+                        
+                        <p class="pt-5">
+                            <h1 class="text-danger">Le Voyageur</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde magni beatae tempore animi nisi non blanditiis maxime officiis assumenda esse explicabo sit, ratione dolorum sed! Distinctio laboriosam rem molestiae?
+                        </p>
+                      </div>
+                        <div>
+                            <img class="img-fluid" src="/images/bus.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6">
+                        <div class="pt-5" >
+                            <div class="text-center m-3">
+                                <h3 class="pt-5 pb-5 text-decoration-underline">Rechercher le meilleur moyen de transport</h3>
+                            </div>
+                            <div class="container">
+                                <form class="mt-5" action="">
+                                    <div class="">
+                                        <label for="" class="fs-5 fw-bold">Ville de depart</label>
+                                        <select class="form-control" name="depart" id="depart" required>
+                                            <option value="">--Selectionner une ville--</option>
+                                            <option value="lbv">Libreville</option>
+                                            <option value="pog">Port-Gentil</option>
+                                            <option value="mla">Mouila</option>
+                                            <option value="km">Koulamoutou</option>
+                                            <option value="oye">Oyem</option>
+                                            <option value="fgm">Fougamou</option>
+                                          </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Ville de destination</label>
+                                        <select class="form-control" name="arriver" id="arriver" required>
+                                            <option value="">--Selectionner une ville--</option>
+                                            <option value="lbv">Libreville</option>
+                                            <option value="pog">Port-Gentil</option>
+                                            <option value="mla">Mouila</option>
+                                            <option value="km">Koulamoutou</option>
+                                            <option value="oye">Oyem</option>
+                                            <option value="fgm">Fougamou</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Date de depart</label>
+                                        <input class="form-control" type="date" name="date_dep" id="date_dep" required>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Type de Bus</label>
+                                        <select class="form-control" name="depart" id="depart" required>
+                                            <option value="">--Type de bus--</option>
+                                            <option value="cos">Coaster</option>
+                                            <option value="bsn">Bus normal</option>
+                                        </select>
+                                    </div>
+                                   
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Nombre de personne</label>
+                                        <input  class="form-control" type="number" name="nbr_person" required>
+                                    </div>
+                                    <div class="text-center d-grid gap-2 mt-5">
+                                        <button class="btn btn-primary expand" name="validation" type="submit">Rechercher</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                </div>
+    
+            </div>
+             <!-- Contenu de l'Élément train -->
+            <div>
+                <div id="elementTrain">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 mx-auto">
+                          <div class="m-5 mb-0">
+                            <p class="pt-5">
+                                <h1 class="text-danger">Le Voyageur</h1>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde magni beatae tempore animi nisi non blanditiis maxime officiis assumenda esse explicabo sit, ratione dolorum sed! Distinctio laboriosam rem molestiae?
+                            </p>
+                          </div>
+                            <div>
+                                <img class="img-fluid" src="/images/train1.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6">
+                            <div class="" >
+                                <div class="text-center m-3">
+                                    <h3 class="pt-5 pb-5 text-decoration-underline">Rechercher le meilleur moyen de transport</h3>
+                                </div>
+                                <div class="container">
+                                    <form class="" action="">
+                                        <div class="">
+                                            <label for="" class="fs-5 fw-bold">Ville de depart</label>
+                                            <select class="form-control" name="depart" id="depart" required>
+                                                <option value="">--Selectionner une ville--</option>
+                                                <option value="lbv">Libreville</option>
+                                                <option value="pog">Port-Gentil</option>
+                                                <option value="mla">Mouila</option>
+                                                <option value="km">Koulamoutou</option>
+                                                <option value="oye">Oyem</option>
+                                                <option value="fgm">Fougamou</option>
+                                              </select>
+                                        </div>
+                                        <div class="">
+                                            <label class="fs-5 fw-bold" for="">Ville de destination</label>
+                                            <select class="form-control" name="arriver" id="arriver" required>
+                                                <option value="">--Selectionner une ville--</option>
+                                                <option value="lbv">Libreville</option>
+                                                <option value="pog">Port-Gentil</option>
+                                                <option value="mla">Mouila</option>
+                                                <option value="km">Koulamoutou</option>
+                                                <option value="oye">Oyem</option>
+                                                <option value="fgm">Fougamou</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <label class="fs-5 fw-bold" for="">Date de depart</label>
+                                            <input class="form-control" type="date" name="date_dep" id="date_dep" required>
+                                        </div>
+                                        <div class="">
+                                            <label class="fs-5 fw-bold" for="">Type de train</label>
+                                            <select class="form-control" name="depart" id="depart" required>
+                                                <option value="">--Type de train--</option>
+                                                <option value="eq">Equateur</option>
+                                                <option value="ex">Express</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <label class="fs-5 fw-bold" for="">Quelle classe?</label>
+                                            <select class="form-control" name="depart" id="depart" required>
+                                                <option value="">--Choisir votre classe--</option>
+                                                <option value="coaster">VIP</option>
+                                                <option value="bsn">1er Classe</option>
+                                                <option value="bsn">2eme Classe</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <label class="fs-5 fw-bold" for="">Nombre de personne</label>
+                                            <input  class="form-control" type="number" name="nbr_person" required>
+                                        </div>
+                                        <div class="text-center d-grid gap-2 mt-3 mb-3">
+                                            <button class="btn btn-primary expand" name="validation" type="submit">Rechercher</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                        </div>
+                    </div>
+        
+                </div>
+    
+            </div>
+            <!-- Contenu de l'Élément bateau -->
+            <div id="elementBateau">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="m-5">
+                        
+                        <p class="pt-5">
+                            <h1 class="text-danger">Le Voyageur</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde magni beatae tempore animi nisi non blanditiis maxime officiis assumenda esse explicabo sit, ratione dolorum sed! Distinctio laboriosam rem molestiae?
+                        </p>
+                      </div>
+                        <div class="text-center">
+                            <img class="img-fluid" src="/images/boat1.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6">
+                        <div class="" >
+                            <div class="text-center m-3">
+                                <h3 class="pt-5 pb-5 text-decoration-underline">Rechercher le meilleur moyen de transport</h3>
+                            </div>
+                            <div class="container">
+                                <form class="" action="">
+                                    <div class="">
+                                        <label for="" class="fs-5 fw-bold">Ville de depart</label>
+                                        <select class="form-control" name="depart" id="depart" required>
+                                            <option value="">--Selectionner une ville--</option>
+                                            <option value="lbv">Libreville</option>
+                                            <option value="pog">Port-Gentil</option>
+                                            <option value="mla">Mouila</option>
+                                            <option value="km">Koulamoutou</option>
+                                            <option value="oye">Oyem</option>
+                                            <option value="fgm">Fougamou</option>
+                                          </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Ville de destination</label>
+                                        <select class="form-control" name="arriver" id="arriver" required>
+                                            <option value="">--Selectionner une ville--</option>
+                                            <option value="lbv">Libreville</option>
+                                            <option value="pog">Port-Gentil</option>
+                                            <option value="mla">Mouila</option>
+                                            <option value="km">Koulamoutou</option>
+                                            <option value="oye">Oyem</option>
+                                            <option value="fgm">Fougamou</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Date de depart</label>
+                                        <input class="form-control" type="date" name="date_dep" id="date_dep" required>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Type de Bateau</label>
+                                        <select class="form-control" name="depart" id="depart" required>
+                                            <option value="">--Type de bateau--</option>
+                                            <option value="eq">Rapide</option>
+                                            <option value="ex">normal</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Quelle classe?</label>
+                                        <select class="form-control" name="depart" id="depart" required>
+                                            <option value="">--Choisir votre classe--</option>
+                                            <option value="coaster">VIP</option>
+                                            <option value="bsn">1er Classe</option>
+                                            <option value="bsn">2eme Classe</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <label class="fs-5 fw-bold" for="">Nombre de personne</label>
+                                        <input  class="form-control" type="number" name="nbr_person" required>
+                                    </div>
+                                    <div class="text-center d-grid gap-2 mt-3 mb-3">
+                                        <button class="btn btn-primary expand" name="validation" type="submit">Rechercher</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+        
+            <!-- Section: Links  -->
+          
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="">Le voyegeur</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+
+
+
+    
+    
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/script.js" defer></script>
+</body>
+</html>
